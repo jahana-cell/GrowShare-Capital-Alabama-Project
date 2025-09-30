@@ -17,122 +17,132 @@
         </div>
       </div>
       <div class="header-controls">
-        <button id="notesToggle" title="Toggle speaker notes">Notes</button>
         <button id="fsToggle" title="Toggle fullscreen">Fullscreen</button>
       </div>
     </header>
 
-  <main id="slides">
-      <!-- Slide 1: Executive Summary -->
-      <section class="slide active" data-title="Executive Summary">
-        <div class="slide-inner">
+    <nav class="side-nav" aria-label="Presentation navigation">
+      <ul>
+        <li><a href="#summary" data-target="summary" class="active">Summary</a></li>
+        <li><a href="#market" data-target="market">Market</a></li>
+        <li><a href="#opportunity" data-target="opportunity">Opportunity</a></li>
+        <li><a href="#solution" data-target="solution">Solution</a></li>
+        <li><a href="#competition" data-target="competition">Competition</a></li>
+        <li><a href="#swot" data-target="swot">SWOT</a></li>
+        <li><a href="#marketing" data-target="marketing">Marketing</a></li>
+        <li><a href="#roadmap" data-target="roadmap">Roadmap</a></li>
+        <li><a href="#financials" data-target="financials">Financials</a></li>
+        <li><a href="#cta" data-target="cta">Get Involved</a></li>
+      </ul>
+    </nav>
+
+    <main id="content">
+      <section id="summary" class="panel p-1">
+        <div class="panel-inner">
           <h2>Executive Summary</h2>
-          <p>Launch a community-driven breeding program starting with 10 goats and 15 sheep, scaling to 50 animals. Direct-to-consumer sales and on-site value-added processing ensure higher margins and food transparency.</p>
-          <ul>
-            <li>Community-backed investment model</li>
-            <li>Focus on fresh, local, ethically-raised meat</li>
-            <li>Value capture through processing and direct sales</li>
-          </ul>
+          <p>Start with 10 goats and 15 sheep, scale to 50. Direct-to-consumer, community-investor model with on-site processing to capture value.</p>
+          <div class="highlights">
+            <div class="chip">Community-backed</div>
+            <div class="chip">Fresh & Local</div>
+            <div class="chip">Halal-capable</div>
+            <div class="chip">Value-added processing</div>
+          </div>
         </div>
-        <aside class="notes">Start by introducing the mission, investment ask, and quick numbers. Keep this under 2 minutes.</aside>
       </section>
 
-      <!-- Slide 2: Market Overview -->
-      <section class="slide" data-title="Market Overview">
-        <div class="slide-inner">
+      <section id="market" class="panel p-2">
+        <div class="panel-inner">
           <h2>Market Overview & Pain Points</h2>
-          <p>The U.S. market shows strong demand for goat and lamb meat but relies heavily on imports. Key pain points:</p>
-          <ul>
-            <li>Limited availability of fresh local meat</li>
-            <li>Lack of transparency in the supply chain</li>
-            <li>Price inefficiencies due to middlemen</li>
-            <li>Barriers for niche markets (Halal/Zabiha)</li>
+          <ul class="points">
+            <li>High domestic demand, heavy reliance on imports</li>
+            <li>Consumers lack fresh local options and transparency</li>
+            <li>Price inflated by multiple middlemen</li>
+            <li>Cultural and Halal requirements underserved</li>
           </ul>
         </div>
-        <aside class="notes">Highlight cultural demand and import reliance. Mention $160 average price assumption.</aside>
       </section>
 
-      <!-- Slide 3: Opportunity -->
-      <section class="slide" data-title="The Opportunity">
-        <div class="slide-inner">
+      <section id="opportunity" class="panel p-3">
+        <div class="panel-inner">
           <h2>The Opportunity</h2>
           <ol>
-            <li>Serve unmet niche demand (ethnic & gourmet markets)</li>
-            <li>Capture local food movement customers</li>
-            <li>Build resilient direct-to-consumer relationships</li>
-            <li>Offer local investment opportunities</li>
+            <li>Serve niche ethnic & gourmet markets at premium prices</li>
+            <li>Leverage the local-food movement</li>
+            <li>Build direct relationships to stabilize revenue</li>
+            <li>Offer local investment options</li>
           </ol>
         </div>
-        <aside class="notes">Emphasize willingness to pay premium for traceability and Halal options.</aside>
       </section>
 
-      <!-- Slide 4: Solution -->
-      <section class="slide" data-title="Our Solution">
-        <div class="slide-inner">
+      <section id="solution" class="panel p-4">
+        <div class="panel-inner">
           <h2>Our Solution</h2>
-          <p>Three pillars:</p>
-          <ul>
-            <li>Community-centric breeding program</li>
-            <li>Direct-to-consumer sales to remove middlemen</li>
-            <li>Value-added on-site processing (Halal-friendly)</li>
-          </ul>
-        </div>
-        <aside class="notes">Describe how processing captures margin and guarantees standards.</aside>
-      </section>
-
-      <!-- Slide 5: Competitive Landscape -->
-      <section class="slide" data-title="Competitive Landscape">
-        <div class="slide-inner">
-          <h2>Competitive Landscape</h2>
-          <p>We compete by offering freshness, traceability, and a strong local connection compared to large producers and imports.</p>
-          <div class="grid">
-            <div class="card">
-              <h3>Large Producers</h3>
-              <p>Strengths: Scale, low cost. Weaknesses: Opaque chain, frozen product.</p>
+          <div class="columns">
+            <div>
+              <h3>Breeding Program</h3>
+              <p>Community-centric model with transparent practices and regular updates.</p>
             </div>
-            <div class="card">
-              <h3>Local Farms</h3>
-              <p>Strengths: Local appeal. Weaknesses: Inconsistent supply, lack of processing.</p>
+            <div>
+              <h3>Direct Sales</h3>
+              <p>Whole/half/custom cuts direct to customers and restaurants.</p>
             </div>
-            <div class="card">
-              <h3>Imported Meat</h3>
-              <p>Strengths: Availability. Weaknesses: Long transit, frozen, untraceable.</p>
+            <div>
+              <h3>Processing</h3>
+              <p>On-site compliant processing to control quality and offer Halal options.</p>
             </div>
           </div>
         </div>
-        <aside class="notes">Point out our unique value capture via processing and community ties.</aside>
       </section>
 
-      <!-- Slide 6: SWOT -->
-      <section class="slide" data-title="SWOT Analysis">
-        <div class="slide-inner">
-          <h2>SWOT Analysis</h2>
-          <div class="swot">
-            <div>
+      <section id="competition" class="panel p-5">
+        <div class="panel-inner">
+          <h2>Competitive Landscape</h2>
+          <div class="grid">
+            <div class="card colorful">
+              <h4>Large Producers</h4>
+              <p>Scale & low price; limited freshness and traceability.</p>
+            </div>
+            <div class="card colorful">
+              <h4>Local Farms</h4>
+              <p>Local appeal; often inconsistent supply and no processing.</p>
+            </div>
+            <div class="card colorful">
+              <h4>Imported Meat</h4>
+              <p>Available & consistent, but frozen and untraceable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="swot" class="panel p-6">
+        <div class="panel-inner">
+          <h2>SWOT</h2>
+          <div class="swot-grid">
+            <div class="swot-card" data-idx="0">
               <h4>Strengths</h4>
               <ul>
                 <li>High-value niche market</li>
-                <li>Hardy animals, multiple revenue streams</li>
+                <li>Hardy animals & multiple revenue streams</li>
                 <li>Community-investor model</li>
               </ul>
             </div>
-            <div>
+            <div class="swot-card" data-idx="1">
               <h4>Weaknesses</h4>
               <ul>
                 <li>Slower growth cycle</li>
-                <li>Parasite management needs</li>
-                <li>Initial capital requirements</li>
+                <li>Parasite management</li>
+                <li>Initial capital needs</li>
               </ul>
             </div>
-            <div>
+            <div class="swot-card" data-idx="2">
               <h4>Opportunities</h4>
               <ul>
                 <li>Value-added processing</li>
                 <li>Government grants</li>
-                <li>Agritourism and farm experiences</li>
+                <li>Agritourism</li>
               </ul>
             </div>
-            <div>
+            <div class="swot-card" data-idx="3">
               <h4>Threats</h4>
               <ul>
                 <li>Predation</li>
@@ -141,79 +151,80 @@
               </ul>
             </div>
           </div>
+          <p class="swot-hint">Click any card to expand mitigation ideas.</p>
+          <div id="swot-detail" class="swot-detail"></div>
         </div>
-        <aside class="notes">Walk through one or two practical mitigation steps for threats listed.</aside>
       </section>
 
-      <!-- Slide 7: Marketing -->
-      <section class="slide" data-title="Marketing Strategy">
-        <div class="slide-inner">
+      <section id="marketing" class="panel p-7">
+        <div class="panel-inner">
           <h2>Marketing Strategy</h2>
-          <p>60% Offline, 40% Online</p>
-          <ul>
-            <li>Farmers' markets, partnerships, farm open days</li>
-            <li>Social media, content marketing, email, local SEO</li>
-          </ul>
+          <div class="columns">
+            <div>
+              <h3>Offline (60%)</h3>
+              <ul>
+                <li>Farmers' markets & restaurant partnerships</li>
+                <li>Farm open days & agritourism</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Online (40%)</h3>
+              <ul>
+                <li>Social media, content, email, local SEO</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <aside class="notes">Suggest KPIs: leads per market, conversion to pre-orders, and email list growth.</aside>
       </section>
 
-      <!-- Slide 8: Roadmap -->
-      <section class="slide" data-title="Roadmap">
-        <div class="slide-inner">
+      <section id="roadmap" class="panel p-8">
+        <div class="panel-inner">
           <h2>Roadmap</h2>
-        <h3>Phase 1 (Q1-Q2)</h3>
-        <ul>
-          <li>Secure $50,000+ funding</li>
-          <li>Acquire 10 goats &amp; 15 sheep</li>
-          <li>Install fencing, shelters, water</li>
-          <li>Establish legal entity & permits</li>
-        </ul>
-        <h3>Phase 2 (Q3-Q4)</h3>
-        <ul>
-          <li>First breeding cycle; launch pre-sales</li>
-          <li>Start building processing facility</li>
-        </ul>
-        <h3>Year 2 & 3</h3>
-        <ul>
-          <li>Scale herd toward 50 breeding animals</li>
-          <li>Reach profitability and diversify</li>
-        </ul>
+          <div class="timeline">
+            <div class="step"><strong>Phase 1</strong><span>Secure $50k+, acquire stock, build infrastructure</span></div>
+            <div class="step"><strong>Phase 2</strong><span>Breeding cycle, begin processing build, market entry</span></div>
+            <div class="step"><strong>Year 2</strong><span>Scale herd, launch direct sales</span></div>
+            <div class="step"><strong>Year 3</strong><span>Stabilize production & diversify revenue</span></div>
+          </div>
         </div>
-        <aside class="notes">Clearly call out timeline and funding milestones for investors.</aside>
       </section>
 
-      <!-- Slide 9: Financials -->
-      <section class="slide" data-title="Financials">
-        <div class="slide-inner">
-          <h2>Financial Plan & Projections</h2>
-          <p>Optimal Investment Tier: $50,000+</p>
-          <ul>
-            <li>30% Breeding stock</li>
-            <li>40% Infrastructure</li>
-            <li>20% Operational runway</li>
-            <li>10% Processing setup</li>
-          </ul>
-          <table>
-            <thead><tr><th>Year</th><th>Animals Sold</th><th>Annual Rev.</th><th>Net Profit</th></tr></thead>
-            <tbody>
-              <tr><td>1</td><td>20</td><td>$3,200</td><td>$200</td></tr>
-              <tr><td>2</td><td>22</td><td>$3,520</td><td>$520</td></tr>
-              <tr><td>3</td><td>25</td><td>$4,000</td><td>$800</td></tr>
-            </tbody>
-          </table>
+      <section id="financials" class="panel p-9">
+        <div class="panel-inner">
+          <h2>Financials</h2>
+          <div class="budget">
+            <div class="bar"><span style="--w:30%">Breeding stock — 30%</span></div>
+            <div class="bar"><span style="--w:40%">Infrastructure — 40%</span></div>
+            <div class="bar"><span style="--w:20%">Operational runway — 20%</span></div>
+            <div class="bar"><span style="--w:10%">Processing setup — 10%</span></div>
+          </div>
+          <div class="projection">
+            <div class="proj-card">
+              <h4>Year 1</h4>
+              <p>20 animals sold — $3,200 — Net $200</p>
+            </div>
+            <div class="proj-card">
+              <h4>Year 2</h4>
+              <p>22 animals sold — $3,520 — Net $520</p>
+            </div>
+            <div class="proj-card">
+              <h4>Year 3</h4>
+              <p>25 animals sold — $4,000 — Net $800</p>
+            </div>
+          </div>
         </div>
-        <aside class="notes">Note assumptions: $160/animal average price; excludes capex and grant impacts.</aside>
       </section>
 
-      <!-- Slide 10: CTA -->
-      <section class="slide" data-title="Call to Action">
-        <div class="slide-inner">
+      <section id="cta" class="panel p-10">
+        <div class="panel-inner">
           <h2>Get Involved</h2>
-          <p>We're inviting community members and local investors to join Artisan Meats Collective. Contact us to learn about investment tiers, farm tours, and pre-orders.</p>
+          <p>Join Artisan Meats Collective. Learn about investment tiers, farm tours, and pre-orders.</p>
           <p class="contact">Email: info@artisanmeats.local • Phone: (555) 555-0123</p>
+          <div class="cta-actions">
+            <a class="btn-primary" href="mailto:info@artisanmeats.local">Contact Us</a>
+            <a class="btn-ghost" href="#roadmap">See Roadmap</a>
+          </div>
         </div>
-        <aside class="notes">Close by reiterating the ask and next steps for interested investors.</aside>
       </section>
     </main>
 

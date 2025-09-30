@@ -7,11 +7,15 @@ Files created:
 - `styles.css` — Styling and responsive layout.
 - `script.js` — Slide navigation, keyboard and touch support.
 
-New features:
-- Speaker notes per slide (toggle using the Notes button)
+Features:
 - Fullscreen toggle for presentation mode
 - Professional header with logo and improved typography
-- Print-friendly styles for handouts
+- Colorful single-page scroll presentation with interactive components
+
+How to navigate:
+- Use the left side navigation to jump to sections.
+- Use the Prev/Next buttons or Arrow keys / PageUp-PageDown to move between panels.
+- On mobile, swipe up/down to move between panels.
 
 How to run locally:
 
@@ -22,6 +26,6 @@ GitHub Pages note:
  - This is a static site and works fine on GitHub Pages. Push to a repository and enable Pages in the settings; `index.html` at the repo root will serve as the landing page.
 
 Next steps / enhancements:
-- Add images and branding (logo, photos of the farm)
+- Add more images and branding (upload your logo/photos and I’ll wire them in)
 - Export as PDF for handouts
-- Integrate with a small CMS or markdown-to-slide generator
+- Convert to reveal.js or other slide frameworks if you want speaker view and export
