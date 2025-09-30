@@ -29,3 +29,24 @@ Next steps / enhancements:
 - Add more images and branding (upload your logo/photos and I’ll wire them in)
 - Export as PDF for handouts
 - Convert to reveal.js or other slide frameworks if you want speaker view and export
+
+React / Vite app
+-----------------
+I added a React app scaffold under `webapp/` (Vite + React) and wired the current presentation into it. This lets you develop with HMR and produce a modern build.
+
+Quick commands (from repo root):
+
+```bash
+# run the React dev server
+cd webapp
+npm install
+npm run dev
+
+# build for production
+npm run build
+npm run preview
+```
+
+Deployment:
+- A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds `webapp` and deploys `webapp/dist` to the `gh-pages` branch on push to `main`. GitHub Pages can serve the `gh-pages` branch.
+
