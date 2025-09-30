@@ -68,3 +68,16 @@ This section has moved here: [https://vitejs.dev/guide/build.html](https://vitej
 ### Troubleshooting
 
 This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+
+## Artisan Meats Collective Presentation
+
+This project includes a presentation-style app implemented in `src/App.jsx` with styles in `src/App.css`.
+
+To run the presentation locally or in Codespaces:
+
+```bash
+npm install
+npm start
+```
+
+Open http://localhost:3000 in the Simple Browser or Codespaces preview to view the slides.
