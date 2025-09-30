@@ -3,12 +3,17 @@
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
   const progress = document.getElementById('progress');
+  const notesToggle = document.getElementById('notesToggle');
+  const fsToggle = document.getElementById('fsToggle');
   let idx = slides.findIndex(s => s.classList.contains('active')) || 0;
+  let notesShown = false;
 
   function render() {
     slides.forEach((s,i)=> s.classList.toggle('active', i===idx));
     progress.textContent = `${idx+1} / ${slides.length}`;
     document.title = slides[idx].dataset.title + ' — Artisan Meats Collective';
+    // ensure notes visibility state is applied
+    slides.forEach(s => s.classList.toggle('show-notes', notesShown));
   }
 
   function next(){ idx = Math.min(slides.length-1, idx+1); render(); }
@@ -16,6 +21,30 @@
 
   prevBtn.addEventListener('click', prev);
   nextBtn.addEventListener('click', next);
+
+  // notes toggle
+  if(notesToggle){
+    notesToggle.addEventListener('click', ()=>{
+      notesShown = !notesShown;
+      slides.forEach(s => s.classList.toggle('show-notes', notesShown));
+      notesToggle.classList.toggle('active', notesShown);
+    });
+  }
+
+  // fullscreen
+  if(fsToggle){
+    fsToggle.addEventListener('click', async ()=>{
+      try{
+        if(!document.fullscreenElement){
+          await document.documentElement.requestFullscreen();
+          fsToggle.textContent = 'Exit Fullscreen';
+        } else {
+          await document.exitFullscreen();
+          fsToggle.textContent = 'Fullscreen';
+        }
+      }catch(e){ console.warn('Fullscreen not supported', e); }
+    });
+  }
 
   document.addEventListener('keydown', (e)=>{
     if(e.key === 'ArrowRight' || e.key === 'PageDown') next();
@@ -36,4 +65,7 @@
 
   // announce initial
   render();
+  // set focus to next for keyboard users
+  nextBtn.setAttribute('aria-label','Next slide');
+  prevBtn.setAttribute('aria-label','Previous slide');
 })();
